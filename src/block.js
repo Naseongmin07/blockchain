@@ -1,3 +1,25 @@
+// 블록체인으로 무엇을 개발한다?
+// 사용자 -> 중앙화 x, 데이터의 신뢰성
+// 탈중앙화 -> 네트워크를 빌려다가 사용함
+// 암호화폐
+
+// 비트코인             - 네트워크 구성 모든것을 다 만들었다.
+// 비트코인캐시          - git clone 이름 변경!
+// 라이트코인            - 비트코인 로직 그대로 c++로 만듬
+// 이더리움              - 네트워크 구성 모든것을 다 만들었다.
+//                      - 이더리움 네트워크를 빌려다가 만든 코인이 많습니다
+// 도지                  - 이더리움 네트워크 코인
+// 바나나톡              - 이더리움 네트워크 코인
+
+// 코인 vs 토큰
+// 자료조사
+
+// 메인넷 테스트넷
+// 메타마스크
+// 상장한 토큰들 3가지
+// ERC20, ERC721
+
+
 const fs = require('fs')
 const merkle = require('merkle')
 const CryptoJs = require('crypto-js')
@@ -101,6 +123,7 @@ function getAdjustedDifficulty(lastblock, blocks){ // 난이도 조절하는 코
         return prevAdjustmentBlock.header.difficulty
     }
 }
+
 
 function findBlock(version,index,previousHash,time,merkleRoot, difficulty){ 
     let nonce = 0

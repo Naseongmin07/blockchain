@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4",
     "express": "^4.17.1",
     "merkle": "^0.6.0",
     "merkletreejs": "^0.2.24",
